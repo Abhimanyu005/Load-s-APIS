@@ -16,8 +16,9 @@ This project is a Java-based API integration module that handles data loading an
 # Installation
 Step-by-Step Guide
 
-# Clone the repository: git clone [https://github.com/Abhimanyu005/Load-s-APIS](https://github.com/Abhimanyu005/Load-s-APIS)
-# Navigate to the project directory: cd Load-s-APIS
-# Build the project:
-# Using Maven: mvn clean install
+# Clone the repository: git clone 
+[https://github.com/Abhimanyu005/Load-s-APIS](https://github.com/Abhimanyu005/Load-s-APIS)
+Navigate to the project directory: cd Load-s-APIS
+# Build the project
+ Using Maven: mvn clean install
 
