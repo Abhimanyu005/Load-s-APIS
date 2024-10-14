@@ -9,3 +9,6 @@ This project is a Java-based API integration module that handles data loading an
 *Error Handling: Built-in mechanisms to manage API failures and errors gracefully.
 *Extensibility: Easily adaptable for integrating additional APIs or extending functionality.
  
+# Prerequisites
+Java: Version 8 or higher.
+Maven/Gradle: For dependency management and project building.
