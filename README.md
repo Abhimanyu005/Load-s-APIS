@@ -1,6 +1,3 @@
-Here is a formatted README file for your project:
-
----
 
 # Load-s-APIS
 
@@ -49,14 +46,61 @@ This project is a Java-based API integration module that handles data loading an
 
 ### API Endpoints
 
-#### GET `/api/data`
-- **Description:** Fetch data from external sources.
+#### POST `/load`
+- **Description:** Adds new load data to the system.
+- **Payload Example:**
+  
+  ```json
+  {
+    "loadingPoint": "delhi",
+    "unloadingPoint": "jaipur",
+    "productType": "chemicals",
+    "truckType": "canter",
+    "noOfTrucks": "1",
+    "weight": "100",
+    "comment": "",
+    "shipperId": "shipper:<UUID>",
+    "Date": "dd-mm-yyyy"
+  }
+  ```
+- **Response:** `"Load details added successfully"`
 
-#### POST `/api/data`
-- **Description:** Submit new data for processing.
+#### GET `/load`
+- **Description:** Retrieves a list of loads based on the `shipperId`.
+- **Query Params:** `shipperId`
+- **Response:** List of loads associated with the given `shipperId`
+
+#### GET `/load/{loadId}`
+- **Description:** Retrieves the details of a specific load.
+- **Response:** Details of the load associated with the given `loadId`
+
+#### PUT `/load/{loadId}`
+- **Description:** Updates existing load data in the system.
+- **Payload Example:**
+
+  ```json
+  {
+    "loadingPoint": "alwar",
+    "unloadingPoint": "jaipur",
+    "productType": "chemicals",
+    "truckType": "canter",
+    "noOfTrucks": "1",
+    "weight": "100",
+    "comment": "",
+    "Date": "dd-mm-yyyy"
+  }
+  ```
+- **Response:** `"Load details updated successfully"`
+
+#### DELETE `/load/{loadId}`
+- **Description:** Deletes a specific load based on the `loadId`.
+- **Response:** `"Load deleted successfully"`
 
 #### PUT `/api/data`
 - **Description:** Updates existing data in the system.
 
 #### DELETE `/api/data/{id}`
 - **Description:** Deletes a specific piece of data based on the ID.
+
+### License
+This project is licensed under the MIT License.
